@@ -9,6 +9,7 @@ import javax.swing.DropMode;
 
 public class Test extends JFrame{
 	private JTextField txtNom;
+	private JTextField txtPrnom;
 	public Test() {
 		this.setBounds(0,0,1000,5000);
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -29,5 +30,12 @@ public class Test extends JFrame{
 		JLabel lblNewLabel = new JLabel("Prénom");
 		lblNewLabel.setBounds(49, 102, 61, 16);
 		getContentPane().add(lblNewLabel);
+		
+		txtPrnom = new JTextField();
+		txtPrnom.setText("Prénom");
+		txtPrnom.setForeground(Color.GRAY);
+		txtPrnom.setColumns(10);
+		txtPrnom.setBounds(105, 96, 134, 28);
+		getContentPane().add(txtPrnom);
 	}
 }
